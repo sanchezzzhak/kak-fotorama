@@ -174,7 +174,7 @@ class Fotorama extends Widget
 
     public function registerAssets($position = View::POS_READY, $key = null)
     {
-        $id = $this->options;        FotoramaAsset::register($this->view);
+        FotoramaAsset::register($this->view);
         $clientOptions = empty($this->clientOptions) ? '' : Json::htmlEncode($this->clientOptions);
         $this->view->registerJs("jQuery('#{$this->id}').fotorama({$clientOptions})", $position, $key);
     }
