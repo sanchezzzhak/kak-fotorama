@@ -30,7 +30,7 @@ class FotoramaAsset extends AssetBundle
 
     public function registerAssetFiles($view)
     {
-        /*if ($version) {;
+        /*if ($this->version) {;
             $this->baseUrl = self::CDN . $version;
         }*/
         parent::registerAssetFiles($view);
